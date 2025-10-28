@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ауа райы — KazakhWeather</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/theme.js"></script>
+  <script defer src="../js/weather.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand small">
+        <div class="logo"><svg viewBox="0 0 64 64" width="34" height="34" aria-hidden><defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><circle cx="32" cy="28" r="8" fill="url(#g2)"/></svg></div>
+        <div><h1>KazakhWeather</h1></div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="../index.html" class="nav-link">Басты бет</a>
+        <a href="weather.html" class="nav-link active">Ауа райы</a>
+        <a href="about.html" class="nav-link">Біз туралы</a>
+        <a href="contact.html" class="nav-link">Байланыс</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Тақырып өзгерту">🌓</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="search-panel card-glass">
+        <h2>Қала бойынша іздеу</h2>
+        <form id="weatherForm" class="search-form">
+          <input id="cityInput" placeholder="Мысалы — Almaty" autocomplete="off" />
+          <button type="submit" class="btn">Іздеу</button>
+        </form>
+        <div class="preset">
+          <button class="chip">Almaty</button>
+          <button class="chip">Nur-Sultan</button>
+          <button class="chip">Shymkent</button>
+          <button class="chip">Aktobe</button>
+        </div>
+      </section>
+
+      <section id="resultArea" class="result-grid">
+        <div class="empty-state card-glass">
+          <svg width="120" height="80" viewBox="0 0 64 48"><path d="M10 32c0-8 6-14 14-14 4 0 8 2 11 5 3-5 8-9 15-9 9 0 16 7 16 16H10z" fill="#bde0ff"/></svg>
+          <p>Қала атауын енгізіп, нәтижені көрсетіңіз</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>API: OpenWeatherMap · Тіл: қазақша</p>
+    </footer>
+  </div>
+</body>
+</html>

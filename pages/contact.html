@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Байланыс — KazakhWeather</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/theme.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "KFSH59bSdnUS13XBi",
+      });
+    })();
+  </script>
+
+</head>
+
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand small">
+        <div class="logo">
+          <svg viewBox="0 0 64 64" width="34" height="34" aria-hidden>
+            <defs>
+              <linearGradient id="g4" x1="0" x2="1">
+                <stop offset="0" stop-color="#60a5fa" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="28" r="8" fill="url(#g4)" />
+          </svg>
+        </div>
+        <div>
+          <h1>KazakhWeather</h1>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="../index.html" class="nav-link">Басты бет</a>
+        <a href="weather.html" class="nav-link">Ауа райы</a>
+        <a href="about.html" class="nav-link">Біз туралы</a>
+        <a href="contact.html" class="nav-link active">Байланыс</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Тақырып өзгерту">
+          🌓
+        </button>
+      </nav>
+    </header>
+
+    <main class="container content card-glass">
+      <h2>Байланыс</h2>
+      <section class="feedback-section">
+
+        <form id="feedbackForm" class="card-glass feedback-form">
+          <label>
+            Атыңыз:
+            <input type="text" id="name" name="name" placeholder="Атыңызды жазыңыз" required />
+          </label>
+
+          <label>
+            Электрондық пошта:
+            <input type="email" id="email" name="email" placeholder="example@mail.kz" required />
+          </label>
+
+          <label>
+            Пікіріңіз:
+            <textarea id="message" name="message" rows="4" placeholder="Пікіріңізді осында жазыңыз..."
+              required></textarea>
+          </label>
+
+          <button type="submit" class="btn">Жіберу</button>
+        </form>
+
+        <div id="feedbackResult" class="feedback-result"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 KazakhWeather</p>
+    </footer>
+  </div>
+</body>
+
+</html>

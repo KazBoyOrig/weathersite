@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Басты бет — KazakhWeather</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/theme.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">
+          <svg viewBox="0 0 64 64" width="40" height="40" aria-hidden><defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><circle cx="32" cy="28" r="10" fill="url(#g1)"/><path d="M32 6v6M32 52v6M6 32h6M52 32h6M12 12l4 4M48 48l4 4M12 52l4-4M48 16l4-4" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <h1>KazakhWeather</h1>
+          <p class="tag">Ауа райының көрінісі — жылдам, әдемі, қазақша</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Басты бет</a>
+        <a href="pages/weather.html" class="nav-link">Ауа райы</a>
+        <a href="pages/about.html" class="nav-link">Біз туралы</a>
+        <a href="pages/contact.html" class="nav-link">Байланыс</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Тақырып өзгерту">🌓</button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-left">
+        <h2>Қала бойынша жедел ауа райы</h2>
+        <p>OpenWeatherMap API негізінде жасалған, тез әрі әдемі интерфейс. Ауа райын іздеп, жақсы күн жоспарлаңыз.</p>
+        <div class="cta">
+          <a class="btn" href="pages/weather.html">Ауа райын тексеру</a>
+          <a class="btn ghost" href="pages/about.html">Толығырақ</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="card-glass">
+          <div class="temp-big">20°</div>
+          <div class="meta">Almaty · Жаңбырсыз · 14:30</div>
+          <div class="mini">
+            <div><strong>Ауа</strong><div>Таза</div></div>
+            <div><strong>Ылғ</strong><div>45%</div></div>
+            <div><strong>Жел</strong><div>3 м/с</div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Жылдам</h3>
+        <p>Қарапайым іздеу және нақты деректер — бір секунд ішінде.</p>
+      </div>
+      <div class="feature">
+        <h3>Қазақша меню</h3>
+        <p>Барлық беттерде қазақша мәтін және навигация.</p>
+      </div>
+      <div class="feature">
+        <h3>Тақырып таңдауға болады</h3>
+        <p>Жарық және түнгі режим — бір батырмада.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 KazakhWeather · Built with ❤️ · OpenWeatherMap API</p>
+    </footer>
+  </div>
+</body>
+</html>
